@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADSB SUPPORT - Extensions</title> 
+    <link rel="icon" href="./images/favicon-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+          <div class="logo-spacer">
+            <img class="logo" src="./images/ADSB-Support-NEG-w800px.png" >
+          </div>
+          <h1 class="title">ADSB SUPPORT</h1>
+          <div class="logo-spacer">
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="lunch-alert hidden" id="lunch-alert">
+            <div class="lunch-header">It's Lunch Time!</div>
+            <iframe id="lunch-iframe" src="https://giphy.com/embed/zxa07WvFbFffq" frameBorder="0" ></iframe>
+            <button onclick="triggerAlert(false)" id="acknowledge"> Acknowledge</button>
+        </div>  
+        <div class="clock-container">
+            <div class="timezone-clock">
+                <div class="city-container" >Los Angeles</div>
+                <div class="current-time" id="los-angeles-time"></div>
+                <div class="date" id="los-angeles-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container">Ottawa</div>
+                <div class="current-time" id="ottawa-time"></div>
+                <div class="date" id="ottawa-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container">Nuuk</div>
+                <div class="current-time" id="nuuk-time"></div>
+                <div class="date" id="nuuk-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container">UTC</div>
+                <div class="current-time" id="utc-time"></div>
+                <div class="date" id="utc-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container">Cafeteria in Billund</div>
+                <div class="current-time" id="billund-time"></div>
+                <div class="date" id="billund-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container" >Dubai</div>
+                <div class="current-time" id="dubai-time"></div>
+                <div class="date" id="dubai-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container" >Singapore</div>
+                <div class="current-time" id="singapore-time"></div>
+                <div class="date" id="singapore-date"></div>
+            </div>
+            <div class="timezone-clock">
+                <div class="city-container">Sydney</div>
+                <div class="current-time" id="sydney-time"></div>
+                <div class="date" id="sydney-date"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div id="list-positioner">
+                <iframe id="receiver-list" src="https://dev-as-site-angular-adsb.ppsflightplanning.com/home" frameborder="0"></iframe>
+            </div>
+            <div id="phone-positioner">
+                <iframe id="phone-list" src="https://wallboard.pbxadmin.dk/da/8bec8209ad3c8324c66921d9e32e50d6" frameborder="0"></iframe>
+            </div>
+        </div>
+      </section>
+      <script src="./time-zone-clocks.js" type="text/javascript"></script>
+      <script src="./script.js"></script>
+
+</body>
+</html>
